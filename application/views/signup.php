@@ -1,6 +1,6 @@
-<div id="signup">
+									<div id="signup">
 
-<h1>Sign Up baddy</h1>
+<h1>Sign Up </h1>
 
 <fieldset>
 	<?php echo validation_errors('<p class="error">'); ?>
