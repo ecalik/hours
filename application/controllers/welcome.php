@@ -4,9 +4,9 @@ class Welcome extends CI_Controller {
 
 	public function signup()
 	{
-		$data ['content'] = "signup";
+		$data ['main_content'] = "signup";
 		
-		$this->load->view('template/template', $data);
+		$this->load->view('includes/template', $data);
 	}
 	
 }

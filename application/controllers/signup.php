@@ -14,9 +14,9 @@ class Signup extends CI_Controller {
 		
 		if($this->form_validation->run() == FALSE){
 			
-			$data ['content'] = "signup";
+			$data ['main_content'] = "signup";
 		
-			$this->load->view('template/template', $data);
+			$this->load->view('includes/template', $data);
 		
 		} else {
 		
@@ -24,14 +24,14 @@ class Signup extends CI_Controller {
 			
 			if($q = $this->signup_model->signup()){
 				
-				$data['content'] = 'signup_succes';
-				$this->load->view('template/template', $data);
+				$data['main_content'] = 'signup_succes';
+				$this->load->view('includes/template', $data);
 				
 			} else {
 				
-				$data ['content'] = "signup";
+				$data ['main_content'] = "signup";
 		
-				$this->load->view('template/template', $data);
+				$this->load->view('includes/template', $data);
 				
 			}
 		}
