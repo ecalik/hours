@@ -1,8 +1,10 @@
 <body id="loginbody">
-<div id="login_form">
+
+<div class="login_form">
 	<h1>Login</h1>
 	<?php 	
 		echo form_open('login/validate_credentials');
+
 		$data = array(
 		  'name'        => 'username',
 		  'placeholder' => 'Username',
@@ -17,12 +19,27 @@
 		  'onblur' 		=> "this.placeholder='Password'"
 		);
 		echo form_password($data);
-		$data = array(
-		  'name'        => 'submit',
-		  'value'	 	=> 'Submit'
-		);
-		echo form_submit($data);
-	    echo anchor('login/signup', 'Create Account');
+    ?>
+	<p class="remember_me">
+          <label>
+            <input type="checkbox" name="remember_me" id="remember_me">
+            Remember me on this computer
+          </label>
+		  
+        </p>
+	<p class="submit">
+	<?php
+		echo form_submit('submit', 'Login');?>
+	</p>
+	
+</div>
+<div class="login-help">
+      <p>Forgot your password? <?php echo anchor('login/resetpassword', 'Click here to reset it.') ?></p>
+	<p><?php
+	    echo 'New Company? ' . anchor('login/signup', 'Sign Up Here!');
 	?>
 </div>
+	</p>
+	</div>
+	
 </body>

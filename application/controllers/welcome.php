@@ -6,7 +6,7 @@ class Welcome extends CI_Controller {
 	{
 		$data ['main_content'] = "signup";
 		
-		$this->load->view('includes/template', $data);
+		$this->load->view('loginincludes/template', $data);
 	}
 	
 }

@@ -10,7 +10,7 @@ class Main extends CI_Controller {
 	function index()
 	{
 		$data['main_content'] = 'main';
-		$this->load->view('includes/template', $data);
+		$this->load->view('mainincludes/template', $data);
 	}
 }
 ?>

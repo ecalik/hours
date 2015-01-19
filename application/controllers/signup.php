@@ -16,7 +16,7 @@ class Signup extends CI_Controller {
 			
 			$data ['main_content'] = "signup";
 		
-			$this->load->view('includes/template', $data);
+			$this->load->view('loginincludes/template', $data);
 		
 		} else {
 		
@@ -25,13 +25,13 @@ class Signup extends CI_Controller {
 			if($q = $this->signup_model->signup()){
 				
 				$data['main_content'] = 'signup_succes';
-				$this->load->view('includes/template', $data);
+				$this->load->view('loginincludes/template', $data);
 				
 			} else {
 				
 				$data ['main_content'] = "signup";
 		
-				$this->load->view('includes/template', $data);
+				$this->load->view('loginincludes/template', $data);
 				
 			}
 		}
