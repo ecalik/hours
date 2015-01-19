@@ -1,3 +1,4 @@
+<body id="loginbody">
 <div id="login_form">
 	<h1>Login</h1>
 	<?php 	
@@ -8,3 +9,4 @@
 	    echo anchor('login/signup', 'Create Account');
 	?>
 </div>
+</body>
