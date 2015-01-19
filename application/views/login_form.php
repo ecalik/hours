@@ -34,12 +34,11 @@
 	
 </div>
 <div class="login-help">
-      <p>Forgot your password? <?php echo anchor('login/resetpassword', 'Click here to reset it.') ?></p>
+      <p>Forgot your password? <?php echo anchor('login/resetpassword', 'Click here to reset.') ?></p>
 	<p><?php
 	    echo 'New Company? ' . anchor('login/signup', 'Sign Up Here!');
 	?>
-</div>
 	</p>
-	</div>
+</div>
 	
 </body>

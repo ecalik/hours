@@ -11,7 +11,7 @@ body{
 #loginbody{
 	background: #0ca3d2;
 	color: #404040;
-	background: url(../images/bg2.jpg) no-repeat;
+	background: url(../images/bg.jpg) no-repeat;
 }
 
 fieldset {
@@ -144,15 +144,26 @@ input[type=submit]:active {
 }
 
 .login-help {
-  margin: 20px 0;
-  font-size: 11px;
-  color: white;
-  text-align: center;
-  text-shadow: 0 1px #2a85a1;
+	font-size: 11px;
+	margin: 20px auto 0;
+	width: 250px;
+
+	padding-top: 10px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	color: #777;
+	border-top: 1px solid #ddd;
+	text-align: center;
+
+	background: white;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .login-help a {
-  color: #cce7fa;
+  color: #2C93DB;
   text-decoration: none;
 }
 .login-help a:hover {
