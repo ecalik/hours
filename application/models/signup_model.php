@@ -42,7 +42,9 @@ class Signup_model extends CI_Model{
 			
 			$data = array(
 				'email_address'	=> $row->email,
-				'password'		=> $pass
+				'password'		=> sha1($pass),
+				'phonenumber'	=> $row->tel,
+				'company'		=> $row->company
 			);
 			
 			$q = $this->db->insert('users', $data);

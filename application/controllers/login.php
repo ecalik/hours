@@ -16,7 +16,7 @@ class Login extends CI_Controller {
 		if($q) //if the users credentials validated
 		{
 			$data = array(
-				'username' => $this->input->post('username'),
+				'email_address' => $this->input->post('username'),
 				'is_logged_in' => true
 			);
 			

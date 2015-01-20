@@ -38,9 +38,6 @@ class Signup extends CI_Controller {
 				
 				$this->load->library('email', $config);
 				
-				
-				
-				
 				$this->email->from('e_calik@yahoo.com', "Erhan");
 				$this->email->to($this->input->post('email'));
 				$this->email->subject("Account confirmation");
@@ -58,8 +55,6 @@ class Signup extends CI_Controller {
 				} else {
 					show_error($this->email->print_debugger());
 				}
-				
-				
 				
 			} else {
 				
@@ -80,7 +75,6 @@ class Signup extends CI_Controller {
 			$this->signup_model->add_user($key);
 			
 			echo 'check your email for your login credentials';
-				
 			
 		} else {
 			
@@ -89,7 +83,5 @@ class Signup extends CI_Controller {
 		}
 	
 	}
-	
-	
 	
 }

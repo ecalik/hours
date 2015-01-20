@@ -2,9 +2,11 @@
 
 <div class="login_form">
 	<h1>Login</h1>
+	
 	<?php 	
+	
 		echo form_open('login/validate_credentials');
-
+	
 		$data = array(
 		  'name'        => 'username',
 		  'placeholder' => 'Username',
