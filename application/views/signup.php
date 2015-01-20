@@ -1,4 +1,4 @@
-									<div id="signup">
+<div id="signup">
 
 <h1>Sign Up </h1>
 
@@ -32,14 +32,6 @@
 		  'onblur' 		=> "this.placeholder='Telephone Number'"
 		);
 	echo form_input($data, set_value('tel'));
-	
-	$data = array(
-		  'name'        => 'kvk',
-		  'placeholder' => 'Enter KvK',
-		  'onfocus'		=> "this.placeholder=''",
-		  'onblur' 		=> "this.placeholder='Enter KvK'"
-		);
-	echo form_input($data, set_value('kvk'));	
 	
 	$data = array(
 		  'type'        => 'submit',

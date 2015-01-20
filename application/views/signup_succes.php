@@ -1,1 +1,1 @@
-successs
+Thank you for signing up! Check your email to activate your account.
